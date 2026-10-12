@@ -14,6 +14,12 @@ Snapshot: **12 October 2026**. Pryvo is an unaudited Polygon Amoy testnet protot
 
 The tests above are from different dates and scopes. The regression count is not a count of public transactions. The fork route is not another completed public deployment.
 
+## The fund-control claim
+
+The reviewed job-escrow implementations have no privileged admin withdrawal or override function. Existing jobs keep their destinations and agreed rules. This claim concerns the designed authority boundary: valid payment, refund, settlement, dispute and timeout actions can still move funds under those rules, including any agreed fee.
+
+It is not a claim that funds are inaccessible under every circumstance or that bugs and dependency failures are impossible. The prototype remains unaudited.
+
 ## How to interpret this page
 
 These are maintainer-reported summaries checked against the project's build records. The product source, deployment scripts and raw records are not part of this teaching repository. Deployment addresses and explorer links are also omitted from this version. Readers cannot independently reproduce or audit the product from these files.

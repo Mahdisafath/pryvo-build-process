@@ -8,6 +8,14 @@ I'm Safath, the founder of [Pryvo](https://pryvo.io). I'm building an escrow and
 
 This repository shares my method, reusable writing templates and lessons from the build. The Pryvo product implementation is kept separately. You can reuse the materials here for your own project.
 
+## Funds locked by agreed rules
+
+In the prototype, each funded job keeps its payment in its own fixed smart-contract escrow. That escrow has no privileged admin withdrawal or override function. Pryvo's founder and admins cannot choose a new destination for an existing job's funds or rewrite its agreed payout rules.
+
+Funds leave through the defined payment, refund, mutual settlement, dispute or timeout routes, including any agreed fee. A permitted caller can trigger a route only under those rules; triggering it does not give the caller an arbitrary withdrawal right.
+
+My ambition is to build payment agreements people can understand and trust. I work toward that through explicit requirements, tests and careful review. The prototype is still unaudited, and software and its dependencies can still fail.
+
 > A useful AI request explains the problem, the limits and what would count as a checked result.
 
 ## Start here

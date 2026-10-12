@@ -2,7 +2,19 @@
 
 These are selected design and process decisions, rewritten at a general level. They show the problem, alternatives and reasoning. They do not expose the product implementation.
 
-## 1. A bounded pause instead of stopping every action
+## 1. No privileged withdrawal from an existing escrow
+
+**Problem:** a payment agreement is harder to trust if an operator can withdraw its funds or replace its payout rules later.
+
+**Options considered:** allow an operator override; constrain payments to the rules accepted for that job.
+
+**Decision:** the job escrow has no privileged admin withdrawal or override function. Its destinations and payout rules stay fixed. Funds can leave through the agreed payment, refund, settlement, dispute and timeout routes, including any agreed fee.
+
+**Why:** the payment should depend on the agreement's rules rather than an operator's discretionary access to its funds.
+
+**Limit:** this removes a category of operator power; it does not prove that the software or its dependencies cannot fail. A permitted timeout trigger is still an agreed route, not an arbitrary withdrawal right.
+
+## 2. A bounded pause instead of stopping every action
 
 **Problem:** “Stop the system” was too broad a requirement. Starting new work and finishing an existing agreement are different actions.
 
@@ -14,7 +26,7 @@ These are selected design and process decisions, rewritten at a general level. T
 
 **Limit:** this is a technical design requirement, not a claim that the complete prototype is secure.
 
-## 2. Keep agreed terms fixed for an existing job
+## 3. Keep agreed terms fixed for an existing job
 
 **Problem:** future improvements could be confused with permission to change an existing agreement.
 
@@ -26,7 +38,7 @@ These are selected design and process decisions, rewritten at a general level. T
 
 **Limit:** fixed terms do not eliminate software defects. The implementation still needs review and testing.
 
-## 3. Separate local results from testnet results
+## 4. Separate local results from testnet results
 
 **Problem:** a local walkthrough can look convincing while leaving real wallet behavior untested.
 
@@ -38,7 +50,7 @@ These are selected design and process decisions, rewritten at a general level. T
 
 **Limit:** a testnet result still does not establish a production payment service or an independent audit.
 
-## 4. Resolve questions in one written response
+## 5. Resolve questions in one written response
 
 **Problem:** individual replies can leave the builder with several versions of the requirements.
 
