@@ -2,7 +2,7 @@
 
 For founders and small teams who want useful progress they can explain and check. This guide turns lessons from Pryvo's prototype work into a method you can reuse on an unrelated project.
 
-As of **16 October 2026**, our first eight prototype sections are recorded complete; the ninth, interface and direct-access review, remains in progress. These lessons come from that work, including corrections. They are not a claim that the whole prototype is finished. Pryvo remains unaudited, on Polygon Amoy testnet and unsuitable for real funds.
+As of **16 October 2026**, our first eight prototype sections are recorded complete. The ninth, interface and direct-access review, is accepted for the demonstration scope with explicit limitations: independent participant tasks, a new current-interface external reviewer trial and detailed device/accessibility coverage remain unverified. These lessons include corrections and unfinished learning. This guide does not establish final prototype completion. Pryvo remains unaudited, on Polygon Amoy testnet and unsuitable for real funds.
 
 ## Start in five minutes
 
@@ -80,7 +80,7 @@ Our interface work exposed a confusing demonstration: example actions could be m
 
 For your app, ask a person to explain what the next action will do before they use it. If they misunderstand, fix the wording or flow and try again. A pleasant screenshot does not establish understanding. An emulated phone viewport and a general physical-device report do not establish independent participant task success.
 
-**Put in the check plan:** a short user task, expected understanding and the observed outcome. Keep early positive feedback distinct from acceptance. This is still an open learning area for our ninth section.
+**Put in the check plan:** a short user task, expected understanding and the observed outcome. Keep early positive feedback distinct from acceptance. This remains an open learning area even though the ninth section was accepted for its demonstration scope.
 
 ## Keep a record another session can use
 
