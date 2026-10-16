@@ -43,3 +43,7 @@ Why: progress is easier to build on when the reasoning and evidence survive the 
 The method helps me direct and review AI-assisted work. It does not make AI output automatically correct or replace independent expertise. Passing checks are evidence about their stated scope, not a guarantee about the whole product.
 
 The [example](examples/SHARED_TASK_BOARD.md) shows how to apply this method without needing the Pryvo implementation.
+
+## Apply this section by section
+
+The [practical guide](GUIDE.md) expands this loop into nine practices learned during the prototype build. Copy its [section brief](templates/SECTION_BRIEF.md) to define one bounded outcome, record decisions as work progresses and hand off an honestly qualified result. Use the [checklist](templates/SECTION_CHECKLIST.md) to keep incomplete checks visible.

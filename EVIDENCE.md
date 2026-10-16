@@ -1,6 +1,6 @@
 # Evidence and limits
 
-Snapshot: **12 October 2026**. Pryvo is an unaudited Polygon Amoy testnet prototype, not a mainnet payment service and not for real funds.
+Snapshot: **16 October 2026**. Pryvo is an unaudited Polygon Amoy testnet prototype, not a mainnet payment service and not for real funds.
 
 ## Selected build results
 
@@ -11,6 +11,10 @@ Snapshot: **12 October 2026**. Pryvo is an unaudited Polygon Amoy testnet protot
 | 9 October 2026 | Actual Amoy wallet journeys | Thirteen actions completed refund, silent-client and unfunded-expiry cases; each finished with zero principal locked | Those stated testnet paths were exercised |
 | 11 October 2026 | Local regression | 128 Foundry checks passed, zero failed; three historical or optional fork checks were skipped | The stated local suite passed; skipped checks are not counted as passes |
 | 12 October 2026 | Isolated Amoy fork | A remaining 56-action route passed with 34 expected rejection checks | A simulated continuation was exercised; it does not claim the corresponding public actions happened |
+| 14 October 2026 | Actual Amoy acceptance | The bounded eighth section finished its recorded governance, pause and isolation route; final accounting was reconciled | The stated testnet section completed; it does not establish production readiness. Exact historical timing replay was unavailable for some checks; local boundary checks remained separately labelled |
+| 16 October 2026 | Local participant interface and founder feedback | The participant demonstration uses examples without a wallet; local browser checks and general Mac/iPhone feedback are recorded | General device feedback is distinct from independent participant tasks; broader device coverage and current-interface external reviewer acceptance remain unverified |
+
+The first eight prototype sections are recorded complete. Section 9 remains in progress; final prototype completion is not claimed. The new [guide](GUIDE.md) teaches lessons from both completed work and this unfinished interface review. This update reviews existing records; no contract tests, chain checks or independent audit were performed for the documentation release.
 
 The tests above are from different dates and scopes. The regression count is not a count of public transactions. The fork route is not another completed public deployment.
 

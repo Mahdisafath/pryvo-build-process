@@ -26,6 +26,9 @@ My ambition is to build payment agreements people can understand and trust. I wo
 | See the reasoning behind decisions | [Decision log](DECISION_LOG.md) |
 | See problems and how they were checked | [Problem solving](PROBLEM_SOLVING.md) |
 | Understand the evidence and its limits | [Evidence](EVIDENCE.md) |
+| Learn from the section-by-section build | [Practical guide](GUIDE.md) |
+| Copy a complete section packet | [Section brief](templates/SECTION_BRIEF.md) · [Checklist](templates/SECTION_CHECKLIST.md) |
+| See a worked section packet | [Synthetic walkthrough](examples/SECTION_WALKTHROUGH.md) |
 | Try the method on your project | [Synthetic task-board example](examples/SHARED_TASK_BOARD.md) |
 
 The working sequence is **problem → spec → questions → build → checks → review**.
