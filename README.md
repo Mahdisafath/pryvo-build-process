@@ -4,7 +4,7 @@
 
 **Status: Pryvo is an unaudited prototype on Polygon Amoy testnet. It is not on mainnet and is not for real funds.**
 
-I'm Safath, the founder of [Pryvo](https://pryvo.io). I'm building an escrow and payments prototype with AI assistance: Claude helps me plan; Codex helps me implement and check the work. I define the requirements, make the trade-offs and review the evidence.
+I'm Safath, the founder of [Pryvo](https://pryvo.io). I'm building an escrow and payments prototype with AI assistance: Claude helps me plan, and Claude Code (earlier, Codex) implements, tests and checks the work. I define the requirements, make the trade-offs and review the evidence.
 
 This repository shares my method, reusable writing templates and lessons from the build. The Pryvo product implementation is kept separately. You can reuse the materials here for your own project.
 
@@ -30,6 +30,7 @@ My ambition is to build payment agreements people can understand and trust. I wo
 | Copy a complete section packet | [Section brief](templates/SECTION_BRIEF.md) · [Checklist](templates/SECTION_CHECKLIST.md) |
 | See a worked section packet | [Synthetic walkthrough](examples/SECTION_WALKTHROUGH.md) |
 | Try the method on your project | [Synthetic task-board example](examples/SHARED_TASK_BOARD.md) |
+| Prepare for a security review with AI | [Audit preparation](AUDIT_PREP.md) · [Security check template](templates/SECURITY_CHECK.md) |
 
 The working sequence is **problem → spec → questions → build → checks → review**.
 
@@ -38,6 +39,12 @@ The working sequence is **problem → spec → questions → build → checks �
 Start with the [build-spec template](templates/BUILD_SPEC.md). Resolve the builder's questions with the [review-response template](templates/REVIEW_RESPONSE.md), then request the [result report](templates/RESULT_REPORT.md). My general [working rules](rules/WORKING_RULES.md) explain the standards behind these steps.
 
 “Security checks” describes a working practice. It does not mean that the prototype is secure, independently audited or ready for real payments.
+
+## Credit
+
+Much of the recent engineering was done with **Claude Code**, Anthropic's AI coding agent. It read the existing work, wrote and ran the tests (including the "break it on purpose" mutation checks), traced failures to their real cause, drafted the evidence records and kept the resume notes current between sessions. Earlier parts of the prototype were built with **Codex**.
+
+I set the goals, made the product and risk decisions and reviewed the results. The AI did much of the heavy lifting, but responsibility for the prototype stays with me, and neither of us claims it is audited.
 
 Follow the build on [X](https://x.com/MahdiSafath). Suggestions about the teaching materials are welcome; see [Contributing](CONTRIBUTING.md).
 

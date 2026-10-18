@@ -14,9 +14,9 @@ I write the expected behavior, constraints, exclusions and acceptance criteria. 
 
 Why: the builder needs a stable target. A conversation alone is easy to interpret differently.
 
-## 3. Give Codex a bounded task
+## 3. Give the AI builder a bounded task
 
-Codex inspects what already exists, identifies gaps and implements the agreed part. I ask it to make the result reviewable and state what remains unverified.
+The builder (now Claude Code; earlier, Codex) inspects what already exists, identifies gaps and implements the agreed part. I ask it to make the result reviewable and state what remains unverified.
 
 Why: a smaller change is easier to understand and check.
 
@@ -38,6 +38,12 @@ I compare the result with the acceptance criteria, review any limits and record 
 
 Why: progress is easier to build on when the reasoning and evidence survive the session.
 
+## 7. Work in numbered parts inside a usage limit
+
+On a small AI plan, I split bigger work into numbered parts. Each part is finished completely, then the evidence and the exact next part are saved before stopping.
+
+Why: I can stop whenever the limit runs out, and the next session continues from a written resume point instead of from memory.
+
 ## What this method establishes
 
 The method helps me direct and review AI-assisted work. It does not make AI output automatically correct or replace independent expertise. Passing checks are evidence about their stated scope, not a guarantee about the whole product.
@@ -45,5 +51,7 @@ The method helps me direct and review AI-assisted work. It does not make AI outp
 The [example](examples/SHARED_TASK_BOARD.md) shows how to apply this method without needing the Pryvo implementation.
 
 ## Apply this section by section
+
+For security work, [Audit preparation](AUDIT_PREP.md) applies the same loop to one checklist question at a time.
 
 The [practical guide](GUIDE.md) expands this loop into nine practices learned during the prototype build. Copy its [section brief](templates/SECTION_BRIEF.md) to define one bounded outcome, record decisions as work progresses and hand off an honestly qualified result. Use the [checklist](templates/SECTION_CHECKLIST.md) to keep incomplete checks visible.

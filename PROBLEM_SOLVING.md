@@ -1,6 +1,6 @@
 # Problem solving
 
-Three selected stories from the prototype work. The tasks below summarize the work's intent; they are not quotations from conversations.
+Four selected stories from the prototype work. The tasks below summarize the work's intent; they are not quotations from conversations.
 
 ## 1. The wallet was connected, but the interface disagreed
 
@@ -37,5 +37,17 @@ Three selected stories from the prototype work. The tasks below summarize the wo
 **How it was checked:** the Amoy happy-path record showed a terminal job and zero locked principal. A read-only duplicate completion attempt was rejected; it did not create a second paid transaction.
 
 **Lesson:** define “done” in terms of the resulting state and remaining obligation, not only a successful click.
+
+## 4. The failing test was wrong, not the contract
+
+**Problem:** during security self-assessment, a new permission test failed, which could have meant a real access-control hole.
+
+**Task:** find out whether the contract or the test was at fault before changing anything.
+
+**AI work:** Claude Code traced the failing call and found that the "this call should fail" expectation had been attached to a harmless lookup made just before the real call.
+
+**How it was checked:** the lookup was moved before the expectation; the test then passed. To show the test could still catch a real hole, the permission check was removed on purpose and the test failed as expected; the code was restored and its hash compared with the reviewed version.
+
+**Lesson:** a red test is a question, not an answer. Investigate it before "fixing" the contract, and prove the corrected test can still fail.
 
 These summaries are maintained from the build records. This repository does not provide product source or a complete independent reproduction of those checks. See [Evidence](EVIDENCE.md) for dates and limits.

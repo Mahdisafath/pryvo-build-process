@@ -12,5 +12,7 @@ These are newly written, reusable summaries of my working standards. They are no
 8. **Keep the next step explicit.** Do not silently expand the task after completing it.
 9. **Preserve the reasoning.** Record the problem, the choice and the reason so the next session can continue.
 10. **Make claims match the evidence.** “Passed these checks” is more precise than a broad claim about the whole product.
+11. **Prove a test can fail.** Break the code on purpose once; a security test that never goes red proves nothing.
+12. **Leave a resume point.** End every part with what is done, the evidence and the next part, so work survives a usage limit or a new session.
 
 The motto is **vibe coding with security checks**. It describes attention to verification and review. It is not a statement that AI-generated work is secure or independently audited.
